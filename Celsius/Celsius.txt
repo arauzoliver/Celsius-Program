@@ -1,0 +1,25 @@
+package javaapplication00;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+/**
+ *
+ * @author DESARROLLO
+ */
+public class JavaApplication00 {
+
+    public static void main(String[] args) throws Exception {
+	// write your code here
+        double tempF, tempC; //temp grados celcius
+        BufferedReader k=new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Temperatura en Celsius: ");   //pide datos, ingresar datos
+        tempC=Double.parseDouble(k.readLine());   //se leen los datos
+        //tempC=25.0;   //asignacion de valor punto flotante
+        tempF=tempC*9/5+32;
+
+        System.out.println("Temperatura es: "+tempC+" C"); //celcius
+        System.out.println("Temperatura es: "+tempF+" F"); //farenheit
+
+    }
+    
+}
